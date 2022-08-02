@@ -1,0 +1,82 @@
+:root {
+    --dark: #1F2937;
+    --darkdark: #111827;
+    --light: #F3F4F6;
+
+    --btnStart: rgb(79, 196, 79);
+    --btnPause:  rgb(197, 189, 98);
+    --btnReset: rgb(228, 82, 82);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Fira sans';
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--light);
+   
+}  
+
+.container {
+    justify-content: center;
+    text-align: center;
+    background-color: var(--darkdark);
+    width: 100%;
+    max-width: 800px;
+    margin: 10rem auto;
+    padding: 1rem  2rem;
+    border-radius: 1rem;
+    
+}
+
+.displayTimer {
+  font-size: 10rem;
+  margin-bottom: 10rem;
+}
+
+.btn-controls{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+ button {
+    font-size: 2em;
+    border: transparent;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 10px;
+    width: 300px;
+    transition: 0.4s ;
+} 
+
+button:hover {
+    opacity: 0.7;
+}
+
+ #btn-start {
+    background-color: var(--btnStart);
+}
+
+#btn-pause {
+    background-color: var(--btnPause);
+}
+
+#btn-reset {
+    background-color: var(--btnReset);
+} 
+
+#btn-start:active {
+    background-color: var(--dark);
+}
+#btn-pause:active {
+    background-color: var(--dark);
+}
+#btn-reset:active {
+    background-color: var(--dark);
+}
